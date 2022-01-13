@@ -31,6 +31,9 @@ const books = {
   }
 
   function printName(info) {
-      let info = books.title + books.author + books.pages + books.isRead;
-      return info;
-  }
+    books.forEach(book => {
+    for (let key in book) {
+        console.log(`${key}: ${book[key]}`);
+    }
+})
+};
