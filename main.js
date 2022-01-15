@@ -12,9 +12,9 @@ function addBookToLibrary() {
     const title = document.querySelector('#title').value;
     const author = document.querySelector('#author').value;
     const pages = document.querySelector('#pages').value;
-    const publication = document.querySelector('#publication').value;
+    const publication = document.querySelector('#year').value;
     const status = document.querySelector('#status').value;
-    const book = new Book(title, author, pages, publication, status);
+    const book = new Book(title, author, pages, year, status);
     myLibrary.push(book);
 }
 
@@ -35,7 +35,7 @@ function bookTemplate(book) {
                 <td class="title">${book.title}</td>
                 <td class="author">${book.author}</td>
                 <td class="pages">${book.pages}</td>
-                <td class="pages">${book.publication}</td>
+                <td class="pages">${book.year}</td>
                 <td class="status"><button id="status-btn" class="${statusBtnColor}">${book.status}</button></td>
                 <td class="delete"><button class="btn btn--primary">x</button></td>
             </tr>`;
@@ -95,11 +95,11 @@ document.addEventListener('click', event => {
 });
 
    class Book {
-    constructor(title, author, pages, publication, status) {
+    constructor(title, author, pages, year, status) {
         this.title = title;
         this.author = author;
         this.pages = pages;
-        this.publication = publication;
+        this.year = year;
         this.status = status;
     }
     toggleStatus() {
@@ -110,25 +110,6 @@ document.addEventListener('click', event => {
         }
     }
 }
-
-
-  //Alternative rendering using class constructor
-
-/* function Book(title, author, pages, status, year) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.status = status;
-    this.year = year;
-  }
-  
-  Book.prototype.toggleStatus = function() {
-    if (this.status === 'read') {
-      this.status = 'unread';
-    } else {
-      this.status = 'read';
-    }
-  } */
 
   const copyright = document.querySelector('.year');
   copyright.textContent = new Date().getFullYear();
