@@ -6,6 +6,14 @@
     font-family: 'Roboto', sans-serif;
   }
   
+    .pagename{
+      text-align: center;
+      padding: 2.17rem;
+      background: #fe45;
+      text-shadow: 3px 2px 8px;
+      font-size: 2.5em;
+  }
+  
   .background {
     padding: 2% 4%;
     margin-bottom: 2em;
@@ -186,10 +194,3 @@
       margin-top: 1.7rem;
   }
 
-  .pagename{
-      text-align: center;
-      padding: 2.17rem;
-      background: #fe45;
-      text-shadow: 3px 2px 8px;
-      font-size: 2.5em;
-  }
