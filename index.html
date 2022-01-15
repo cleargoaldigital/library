@@ -5,10 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backend projects</title>
+     <!-- links -->
+     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles.css">
     <script src="main.js" defer></script>
 </head>
 <body>
     
-</body>
+    <h1 class="pagename">ClearGoal Digital solutions</h1>
+
+        <div class="container">
+            <header class="background">
+                <h1 class="background__heading">Online Library</h1>
+                <p class="background__intro-text">Your Mobile Bookshelf</p>
+            </header>
+            <main>
+            <div class="bookshelf">
+                <h2 class="bookshelf__heading">Books</h2>
+
+                <table class="bookshelf__creation">
+                    
+                    <tr class="table">
+                        <th class="table__heading">Title</th>
+                        <th class="table__heading">Author</th>
+                        <th class="table__heading">Pages</th>
+                        <th class="table__heading">Year</th>
+                        <th class="table__heading">Status</th>
+                        
+                    </tr>
+
+                    <!-- JavaScript make this -->
+                    <tr class="bookshelf__book" data-newBook="">
+                        <td class="title">Murder in the name of Allah</td>
+                        <td class="author">Mirza Tahir Ahmad</td>
+                        <td class="pages">476</td>
+                        <td class="pages">1978</td>
+                        <td class="status"><button class="status__btn">Read</button></td>
+                        
+                        <!-- <td class="delete"><button class="btn btn--primary">x</button></td> -->
+                    </tr>
+
+                    <tr class="bookshelf__book" data-newBook="">
+                        <td class="title">Noah's Ark</td>
+                        <td class="author">Mirza Ghulam Ahmad</td>
+                        <td class="pages">155</td>
+                        <td class="pages">1902</td>
+                        <td class="status"><button class="status__btn">Read</button></td>
+                        
+                        
+                        <!-- <td class="delete"><button class="btn btn--primary">x</button></td> -->
+                    </tr>
+                    
+                </table>
+
+                <button class="bookshelf__open-modal">Add New Book</button>
+            </div>
+
+            <div class="modal" style="display: none;">
+                <h2>Add New Book</h2>
+                <label for="title">Title</label>
+                <input class="modal__input" id="title" type="text">
+                
+                <label for="author">Author</label>
+                <input class="modal__input" id="author" type="text">
+                
+                <label for="pages">Number of Pages</label>
+                <input class="modal__input" id="pages" type="text">
+
+                <label for="year">Year of Publication</label>
+                <input class="modal__input" id="publication" type="text">
+
+                <label for="status">Read Status</label>
+                <select  id="status">
+                    <option value="read">Read</option>
+                    <option value="unread">Unread</option>
+                </select>
+
+                <div class="modal__btn-container">
+                    <button class="modal__add">Add Book</button>
+                    <button class="modal__cancel">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>ClearGoal Digital Solutions &copy; <span class="year"></span></p>
+    </footer>
+
+
+    </body>
+
 </html>

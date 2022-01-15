@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .background {
+    padding: 2% 4%;
+    margin-bottom: 2em;
+    height: 12rem;
+    width: 100%;
+    color: #fff;
+    background: rgb(2, 44, 61);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .background__heading {
+    margin-bottom: 0.2em;
+    font-size: 2.5rem;
+  }
+  
+  .bookshelf {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .bookshelf__heading {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .bookshelf__creation {
+    text-align: left;
+  }
+  
+  .bookshelf table {
+    border-collapse: collapse;
+    margin: 2em 0;
+  }
+  
+  .bookshelf table th {
+    padding: 0.6em 1em;
+  }
+  
+  .bookshelf__book {
+    border-top: 2px solid #ececec;
+  }
+  
+  .bookshelf__book td {
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .bookshelf__open-modal {
+    padding: 0.7rem;
+    border: none;
+    background-color: #383838;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .status__btn {
+    padding: 0.4rem 2rem;
+    border: none;
+    background-color: #ececec;
+    cursor: pointer;
+  }
+  
+  .status__btn--change {
+    background-color: #383838;
+    color: white;
+  }
+  
+  .delete .btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    font-weight: 700;
+  }
+  
+  .modal {
+    padding: 1.25rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: white;
+    max-width: 50%;
+    margin: 0 auto;
+    -webkit-transform: translate(50%, 20%);
+            transform: translate(50%, 20%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+            box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+    color: #4a4a4a;
+  }
+  
+  .modal .modal__add {
+    padding: 0.7rem;
+    border: none;
+    background-color: #383838;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .modal .modal__cancel {
+    padding: 0.7rem;
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .modal h2 {
+    margin-bottom: 1em;
+  }
+  
+  .modal * {
+    -ms-flex-item-align: self-start;
+        -ms-grid-row-align: self-start;
+        align-self: self-start;
+  }
+  
+  .modal label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.4em;
+  }
+  
+  .modal input {
+    width: 100%;
+    margin-bottom: 1em;
+    height: 3em;
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+  }
+  
+  .modal select {
+    width: 6rem;
+    height: 2rem;
+    border: 1.5px solid lightgray;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 1em;
+    cursor: pointer;
+  }
+  
+  tbody:nth-child(even) {
+    background-color: whitesmoke;
+    border-top: 1px solid #a0a0a0;
+  }
+
+  footer{
+      text-align: center;
+      padding: 2.56rem;
+      text-shadow: 3px 2px 6px;
+      background: rgb(2, 44, 61);
+      color: #fff;
+      font-size: larger;
+      margin-top: 1.7rem;
+  }
+
+  .pagename{
+      text-align: center;
+      padding: 2.17rem;
+      background: #fe45;
+      text-shadow: 3px 2px 8px;
+      font-size: 2.5em;
+  }
