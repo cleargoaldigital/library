@@ -13,10 +13,18 @@ function addBookToLibrary() {
     const author = document.querySelector('#author').value;
     const pages = document.querySelector('#pages').value;
     const publication = document.querySelector('#publication').value;
-    const status = document.querySelector('#status').value;
+    const status = document.querySelector('#status').value.toUpperCase();
     const book = new Book(title, author, pages, publication, status);
     myLibrary.push(book);
 }
+
+// function capitalize(entry){
+//     entry = entry.split(" ");
+//     for(let i = 0; i < entry.length; i++){
+//         entry[i] = entry[i][0].toUpperCase() + entry[i].subentry(1);
+//     }
+//     return entry.join(" ");
+// }
 
 function render() {
     let i = 0;
@@ -94,7 +102,7 @@ document.addEventListener('click', event => {
     }
 });
 
-   class Book {
+class Book {
     constructor(title, author, pages, publication, status) {
         this.title = title;
         this.author = author;
@@ -110,6 +118,8 @@ document.addEventListener('click', event => {
         }
     }
 }
+
+
 
 
   //Alternative rendering using class constructor
