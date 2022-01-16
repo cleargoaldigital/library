@@ -121,5 +121,24 @@ let sayHi = function (name){
         console.log(message);
     };
 };
-// calling thefunction alone will do nothing as it returns a function.
+// calling the function alone will do nothing as it returns a function. To use the function, it has to be assigned to a new variable.
 sayHi('Taofeek'); // nothing happens, no errors, just silence...
+
+*The concept of closure is the idea that functions retain their scope even if they are passed around and called outside of that scope. In this case, a funcyion has access to everything inside of parentFunction, even if it gets called outside of that function. Below is a good example:*
+
+const counterCreator = () => {
+  let count = 0;
+  return () => {
+    console.log(count);
+    count++;
+  };
+};
+
+const counter = counterCreator();
+
+counter(); // 0
+counter(); // 1
+counter(); // 2
+counter(); // 3
+
+_As above, the function counter is a closure. It has access to the variable count and can both print and increment it, but there is no other way for our program to access that variable._
