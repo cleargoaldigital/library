@@ -6,8 +6,17 @@
     font-family: 'Roboto', sans-serif;
   }
   
+
+  .pagename{
+    text-align: center;
+    padding: 2.17rem;
+    background: #fe45;
+    text-shadow: 3px 2px 8px;
+    font-size: 2.5em;
+}
+
   .background {
-    padding: 2% 4%;
+    padding: 12% 30%;
     margin-bottom: 2em;
     height: 12rem;
     width: 100%;
@@ -16,12 +25,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* -webkit-box-orient: vertical;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center; */
+        -ms-flex-pack: center;
             justify-content: center;
   }
   
@@ -185,11 +194,8 @@
       font-size: larger;
       margin-top: 1.7rem;
   }
-
-  .pagename{
-      text-align: center;
-      padding: 2.17rem;
-      background: #fe45;
-      text-shadow: 3px 2px 8px;
-      font-size: 2.5em;
+  button{
+      border-radius: 10px;
+      padding: 15px 20px;
+      font-weight: bold;
   }
